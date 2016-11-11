@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using TreehouseDefense;
 
 namespace TreehouseDefense
 {
@@ -15,6 +16,11 @@ namespace TreehouseDefense
             {
                 throw new OutOfBoundsException(x + "," + y + " is outside the boundaries of the map");
             }
+        }
+
+        public bool InRangeOf(MapLocation location, int range)
+        {
+            return DistanceTo(location) <= range;
         }
     }
 }

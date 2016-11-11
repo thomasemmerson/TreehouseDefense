@@ -4,6 +4,7 @@
     {
         private readonly Path _path;
         private int _pathStep = 0;
+        private int _health;
 
         public MapLocation Location
         {
@@ -12,8 +13,6 @@
                 return _path.GetLocationAt(_pathStep);
             }
         }
-
-        private int _health = 2;
         
         public int Health
         {
@@ -21,7 +20,20 @@
             set { _health = value; }
         }
 
-        public bool HasScored { get { return _pathStep >= _path.Length; } }
+        public bool HasScored
+        {
+            get
+            {
+                if (_pathStep >= _path.Length)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
 
         public bool IsNeutralised
         {
@@ -36,6 +48,7 @@
         public Invader(Path path)
         {
             _path = path;
+            _health = 2;
         }
 
         public void Move()

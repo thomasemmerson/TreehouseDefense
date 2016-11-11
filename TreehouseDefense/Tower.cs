@@ -4,6 +4,9 @@
     {
         private readonly MapLocation _location;
 
+        private const int _range = 1;
+        private const int _power = 1;
+
         public Tower(MapLocation location)
         {
             _location = location;
@@ -16,9 +19,12 @@
             while (index < invaders.Length)
             {
                 Invader invader = invaders[index];
-                //do stuff with invader
 
-
+                if(invader.IsActive && _location.InRangeOf(invader.Location, 1))
+                {
+                    invader.DecreaseHealth(_power);
+                    break;
+                }
                 index++;
             }
         }

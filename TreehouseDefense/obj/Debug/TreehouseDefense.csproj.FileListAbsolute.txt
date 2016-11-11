@@ -4,3 +4,11 @@ c:\users\tom.emmerson\documents\visual studio 2013\Projects\TreehouseDefense\Tre
 c:\users\tom.emmerson\documents\visual studio 2013\Projects\TreehouseDefense\TreehouseDefense\bin\Debug\TreehouseDefense.pdb
 c:\users\tom.emmerson\documents\visual studio 2013\Projects\TreehouseDefense\TreehouseDefense\obj\Debug\TreehouseDefense.exe
 c:\users\tom.emmerson\documents\visual studio 2013\Projects\TreehouseDefense\TreehouseDefense\obj\Debug\TreehouseDefense.pdb
+C:\Code\TreehouseDefense\TreehouseDefense\TreehouseDefense\bin\Debug\TreehouseDefense.exe.config
+C:\Code\TreehouseDefense\TreehouseDefense\TreehouseDefense\obj\Debug\TreehouseDefense.exe
+C:\Code\TreehouseDefense\TreehouseDefense\TreehouseDefense\obj\Debug\TreehouseDefense.pdb
+C:\Code\TreehouseDefense\TreehouseDefense\TreehouseDefense\bin\Debug\TreehouseDefense.exe
+C:\Code\TreehouseDefense\TreehouseDefense\TreehouseDefense\bin\Debug\TreehouseDefense.pdb
+C:\Code\TreehouseDefense\TreehouseDefense\TreehouseDefense\bin\Debug\nunit.framework.dll
+C:\Code\TreehouseDefense\TreehouseDefense\TreehouseDefense\bin\Debug\nunit.framework.xml
+C:\Code\TreehouseDefense\TreehouseDefense\TreehouseDefense\obj\Debug\TreehouseDefense.csprojResolveAssemblyReference.cache

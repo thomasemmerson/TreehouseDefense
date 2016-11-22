@@ -72,6 +72,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TreehouseDefense\TreehouseDefense.csproj">
+      <Project>{58e25de7-1d33-408e-a639-7b42b96105a0}</Project>
+      <Name>TreehouseDefense</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

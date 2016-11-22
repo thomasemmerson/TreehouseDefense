@@ -6,11 +6,10 @@ namespace TreehouseDefenseUnitTests
     public class UnitTest1
     {
 
-
         [Test]
         public void Test1()
         {
-            Assert.AreEqual(false, true);
+            Assert.AreEqual(true, true);
         }
     }
 }

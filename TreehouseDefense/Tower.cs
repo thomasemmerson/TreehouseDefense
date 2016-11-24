@@ -1,31 +1,48 @@
-﻿namespace TreehouseDefense
+﻿using System;
+
+namespace TreehouseDefense
 {
     class Tower
     {
-        private readonly MapLocation _location;
-
         private const int _range = 1;
         private const int _power = 1;
+        private const double _accuracy = .75;
+
+        private static readonly Random _random = new System.Random();
+
+        private readonly MapLocation _location;
 
         public Tower(MapLocation location)
         {
             _location = location;
         }
 
+        public bool IsSuccessfulShot()
+        {
+            return Tower._random.NextDouble() < _accuracy;
+        }
+
         public void FireOnInvaders(Invader[] invaders)
         {
-            int index = 0;
-
-            while (index < invaders.Length)
-            {
-                Invader invader = invaders[index];
-
-                if(invader.IsActive && _location.InRangeOf(invader.Location, 1))
+            foreach(Invader invader in invaders)
+            { 
+                if(invader.IsActive && _location.InRangeOf(invader.Location, _range))
                 {
-                    invader.DecreaseHealth(_power);
+                    if (IsSuccessfulShot())
+                    {
+                        invader.DecreaseHealth(_power);
+                        Console.WriteLine("Shot at and hit an invader...");
+
+                        if(invader.IsNeutralised)
+                        {
+                            Console.WriteLine("Neutralised an invader!");
+                        }
+                    }
+                    {
+                        Console.WriteLine("Shot at and missed...");
+                    }
                     break;
                 }
-                index++;
             }
         }
 

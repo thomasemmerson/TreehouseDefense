@@ -16,3 +16,7 @@ D:\Code\TreehouseDefense\TreehouseDefense\bin\Debug\TreehouseDefense.exe.config
 D:\Code\TreehouseDefense\TreehouseDefense\obj\Debug\TreehouseDefense.exe
 D:\Code\TreehouseDefense\TreehouseDefense\obj\Debug\TreehouseDefense.pdb
 D:\Code\TreehouseDefense\TreehouseDefense\obj\Debug\TreehouseDefense.csprojResolveAssemblyReference.cache
+D:\Code\TreehouseDefense\TreehouseDefense\bin\Debug\TreehouseDefense.exe
+D:\Code\TreehouseDefense\TreehouseDefense\bin\Debug\TreehouseDefense.pdb
+D:\Code\TreehouseDefense\TreehouseDefense\bin\Debug\nunit.framework.dll
+D:\Code\TreehouseDefense\TreehouseDefense\bin\Debug\nunit.framework.xml
